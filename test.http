@@ -1,0 +1,8 @@
+POST http://localhost:8181/realms/microservices-realm/protocol/openid-connect/token
+Content-Type: application/x-www-form-urlencoded
+
+client_id=keycloak-auth
+&grant_type=password
+&username=user1
+&password=user1
+&client_secret=ccqS7MKycjUbkSOe1rD5XZY8cPopuHlj
