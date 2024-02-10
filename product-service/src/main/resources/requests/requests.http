@@ -1,0 +1,16 @@
+### Find All Products
+GET {{base-url}}
+
+
+### Create Product
+POST {{base-url}}
+Content-Type: application/json
+
+{
+  "sku": "0001",
+  "description": "Una descripcion descriptiva",
+  "price": 23.87,
+  "status": true
+}
+
+###

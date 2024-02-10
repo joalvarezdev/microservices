@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS "products" (
+    id SERIAL NOT NULL,
+    sku VARCHAR(50) NOT NULL,
+    description VARCHAR(100) NOT NULL,
+    price DOUBLE PRECISION NOT NULL,
+    status BOOLEAN DEFAULT FALSE,
+    CONSTRAINT "pk_products" PRIMARY KEY ("id")
+);
