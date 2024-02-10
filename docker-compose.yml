@@ -34,20 +34,44 @@ services:
     volumes:
       - keycloakdata:/var/lib/postgresql/data
 
-  psqldata:
+  product-service:
     image: postgres:15.2
-    container_name: psqldata
+    container_name: product-service
+    ports:
+      - "5430:5432"
+    environment:
+      POSTGRES_USER: ${DB_USERNAME_PRODUCTS}
+      POSTGRES_PASSWORD: ${DB_PASSWORD_PRODUCTS}
+      POSTGRES_DB: ${DB_NAME_PRODUCTS}
+    volumes:
+      - products:/var/lib/postgresql/data
+
+  order-service:
+    image: postgres:15.2
+    container_name: order-service
+    ports:
+      - "5431:5432"
+    environment:
+      POSTGRES_USER: ${DB_USERNAME_PRODUCTS}
+      POSTGRES_PASSWORD: ${DB_PASSWORD_PRODUCTS}
+      POSTGRES_DB: ${DB_NAME_PRODUCTS}
+    volumes:
+      - orders:/var/lib/postgresql/data
+
+  inventory-service:
+    image: postgres:15.2
+    container_name: inventory-service
     ports:
       - "5432:5432"
     environment:
-      - POSTGRES_USER=${DB_USERNAME_AUTH}
-      - POSTGRES_PASSWORD=${DB_PASSWORD_AUTH}
-      - POSTGRES_DB=${DB_NAME_AUTH}
-    expose:
-      - 5432
+      POSTGRES_USER: ${DB_USERNAME_PRODUCTS}
+      POSTGRES_PASSWORD: ${DB_PASSWORD_PRODUCTS}
+      POSTGRES_DB: ${DB_NAME_PRODUCTS}
     volumes:
-      - pgdata:/var/lib/postgresql/data
+      - inventories:/var/lib/postgresql/data
 
 volumes:
-  pgdata:
+  products:
+  orders:
+  inventories:
   keycloakdata:
