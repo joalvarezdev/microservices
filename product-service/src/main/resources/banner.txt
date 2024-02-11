@@ -1,13 +1,11 @@
-ooooo      ooo                                     .o.       ooooooooo.   ooooo
-`888b.     `8'                                    .888.      `888   `Y88. `888'
- 8 `88b.    8   .ooooo.  oooo oooo    ooo        .8"888.      888   .d88'  888
- 8   `88b.  8  d88' `88b  `88. `88.  .8'        .8' `888.     888ooo88P'   888
- 8     `88b.8  888ooo888   `88..]88..8'        .88ooo8888.    888          888
- 8       `888  888    .o    `888'`888'        .8'     `888.   888          888
-o8o        `8  `Y8bod8P'     `8'  `8'        o88o     o8888o o888o        o888o
-
+ ____  ____    ___   ___    __ __    __ ______         _____   ___  ____  __ __  ____    __    ___
+|    \|    \  /   \ |   \  |  T  T  /  ]      T       / ___/  /  _]|    \|  T  |l    j  /  ]  /  _]
+|  o  )  D  )Y     Y|    \ |  |  | /  /|      | _____(   \_  /  [_ |  D  )  |  | |  T  /  /  /  [_
+|   _/|    / |  O  ||  D  Y|  |  |/  / l_j  l_j|     |\__  TY    _]|    /|  |  | |  | /  /  Y    _]
+|  |  |    \ |     ||     ||  :  /   \_  |  |  l_____j/  \ ||   [_ |    \l  :  ! |  |/   \_ |   [_
+|  |  |  .  Yl     !|     |l     \     | |  |         \    ||     T|  .  Y\   /  j  l\     ||     T
+l__j  l__j\_j \___/ l_____j \__,_j\____j l__j          \___jl_____jl__j\_j \_/  |____j\____jl_____j
 
 ${application.title} ${application.version}
 Powered by Spring Boot ${spring-boot.version}
-Please refer to https://devops.datenkollektiv.de/banner.txt/index.html to create your own banner!
-Banner Font: roman
+Banner Font: crawford
