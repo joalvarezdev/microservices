@@ -1,7 +1,7 @@
 package com.joalvarez.productservice.controller;
 
 import com.joalvarez.productservice.data.dto.ProductDTO;
-import com.joalvarez.productservice.service.ProductService;
+import com.joalvarez.productservice.service.interfaces.IProductService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -12,9 +12,9 @@ import java.util.List;
 @RequestMapping("products")
 public class ProductController {
 
-	private final ProductService service;
+	private final IProductService service;
 
-	public ProductController(ProductService service) {
+	public ProductController(IProductService service) {
 		this.service = service;
 	}
 
