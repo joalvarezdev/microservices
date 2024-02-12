@@ -30,7 +30,7 @@ spring:
     generate-ddl: false
 
 server:
-  port: 8100
+  port: 0
   servlet:
     context-path: /product-service
 
@@ -38,3 +38,10 @@ app:
   name: '@project.name@'
   description: '@project.description@'
   version: '@project.version@'
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}${server.servlet.context-path}

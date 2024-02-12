@@ -1,0 +1,30 @@
+### Find All Products Gateway
+GET {{url-base}}/product-service/products
+
+### Create Product Gateway
+POST {{url-base}}/product-service/products
+Content-Type: application/json
+
+{
+  "sku": "0002",
+  "description": "Coca-Cola",
+  "price": 2.47,
+  "status": true
+}
+
+### Find All Orders Gateway
+GET {{url-base}}/order-service/orders
+
+### Create Order Gateway
+POST {{url-base}}/order-service/orders
+Content-Type: application/json
+
+{
+  "details" : [
+    {
+      "sku": "0001",
+      "price": 14.47,
+      "quantity": 3
+    }
+  ]
+}

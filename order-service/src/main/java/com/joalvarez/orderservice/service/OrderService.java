@@ -52,7 +52,7 @@ public class OrderService extends GenericService<OrderDAO, OrderMapper> implemen
 	public OrderDTO create(OrderDTO dto) {
 		BaseWebClientResponse response = this.inventoryClient.build()
 			.post()
-			.uri("http://localhost:8102/inventory-service/in-stock")
+			.uri("lb://inventory-service/inventory-service/in-stock")
 			.bodyValue(dto.getDetails().stream().map(detail -> new ItemRequestInventoryDTO(detail.getSku(), detail.getQuantity())))
 			.retrieve()
 			.bodyToMono(BaseWebClientResponse.class)

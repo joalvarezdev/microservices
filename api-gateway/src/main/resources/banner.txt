@@ -1,0 +1,12 @@
+  ____  ____  ____         ____   ____  ______    ___ __    __   ____  __ __
+ /    T|    \l    j       /    T /    T|      T  /  _]  T__T  T /    T|  T  T
+Y  o  ||  o  )|  T _____ Y   __jY  o  ||      | /  [_|  |  |  |Y  o  ||  |  |
+|     ||   _/ |  ||     ||  T  ||     |l_j  l_jY    _]  |  |  ||     ||  ~  |
+|  _  ||  |   |  |l_____j|  l_ ||  _  |  |  |  |   [_l  `  '  !|  _  |l___, |
+|  |  ||  |   j  l       |     ||  |  |  |  |  |     T\      / |  |  ||     !
+l__j__jl__j  |____j      l___,_jl__j__j  l__j  l_____j \_/\_/  l__j__jl____/
+
+${application.title} ${application.version}
+Powered by Spring Boot ${spring-boot.version}
+Please refer to https://devops.datenkollektiv.de/banner.txt/index.html to create your own banner!
+Banner Font: crawford
