@@ -11,3 +11,6 @@ Content-Type: application/json
     }
   ]
 }
+
+### Find All Orders
+GET http://localhost:8101/order-service/orders
