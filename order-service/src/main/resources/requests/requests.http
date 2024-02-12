@@ -1,0 +1,13 @@
+### Create Order
+POST http://localhost:8101/order-service/orders
+Content-Type: application/json
+
+{
+  "details" : [
+    {
+      "sku": "0001",
+      "price": 23.87,
+      "quantity": 3
+    }
+  ]
+}

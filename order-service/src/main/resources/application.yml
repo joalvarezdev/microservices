@@ -1,6 +1,6 @@
 spring:
   application:
-    name: inventory-service
+    name: order-service
   mvc:
     pathmatch:
       matching-strategy: ANT_PATH_MATCHER
@@ -30,9 +30,9 @@ spring:
     generate-ddl: false
 
 server:
-  port: 8102
+  port: 8101
   servlet:
-    context-path: /inventory-service
+    context-path: /order-service
 
 app:
   name: '@project.name@'

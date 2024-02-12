@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS orders (
+    id UUID NOT NULL,
+    "number" VARCHAR(50) UNIQUE NOT NULL,
+    CONSTRAINT "pk_orders" PRIMARY KEY ("id")
+);

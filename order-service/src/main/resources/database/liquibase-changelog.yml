@@ -1,0 +1,28 @@
+databaseChangeLog:
+  - changeSet:
+      id: 00-extensions.sql
+      author: joalvarez
+      runOnChange: true
+      changes:
+        - sqlFile:
+            path: ddl/00-extensions.sql
+            relativeToChangelogFile: true
+            endDelimiter: ;
+  - changeSet:
+      id: 01-order.sql
+      author: joalvarez
+      runOnChange: true
+      changes:
+        - sqlFile:
+            path: ddl/01-order.sql
+            relativeToChangelogFile: true
+            endDelimiter: ;
+  - changeSet:
+      id: 02-detail.sql
+      author: joalvarez
+      runOnChange: true
+      changes:
+        - sqlFile:
+            path: ddl/02-detail.sql
+            relativeToChangelogFile: true
+            endDelimiter: ;
