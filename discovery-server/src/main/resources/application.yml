@@ -1,6 +1,9 @@
 spring:
   application:
     name: discovery-server
+  user:
+    name: eureka
+    password: password
 
 server:
   port: 8761
